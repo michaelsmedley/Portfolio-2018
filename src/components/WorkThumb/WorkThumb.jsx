@@ -55,7 +55,7 @@ const WorkThumb = props => (
         <Picture images={props.images} title={props.name} />
       </Link>
       <section className="overlay align-center sm-text-align-center">
-        <Box sm="12">
+        <Box sm="12" md="12" lg="12" xl="12" xxl="12">
           <H3 className="mt-0 mb-0">
             <Link to={props.link} data-theme-change="work">
               {props.name}

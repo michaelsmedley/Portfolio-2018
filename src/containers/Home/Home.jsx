@@ -81,7 +81,7 @@ export default class Home extends Component {
         <Header />
         <main>
           <Container className="align-center mb-1">
-            <Box sm="12" className="ssm-text-align-left">
+            <Box sm="12" md="12" lg="12" xl="12" xxl="12" className="ssm-text-align-left">
               <H1 className="js-animate fadeIn animate-2 mt-0">
                 I am a Web Developer from Preston, UK.<br />
                 <span className="js-animate fadeIn animate-3">

@@ -5,7 +5,7 @@ import H1 from "../../components/H1/H1";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import H3 from "../../components/H3/H3";
-import { Container, Box } from '../../components/Grid/Grid';
+import { Container, Box } from "../../components/Grid/Grid";
 import ThemeChange from "../../helpers/ThemeChange";
 import ResetTheme from "../../helpers/ResetTheme";
 
@@ -94,19 +94,40 @@ export default class About extends Component {
         </Helmet>
         <Header theme="dark" />
         <Container className="align-top mb-1">
-          <Box sm="12" className="sm-text-align-center">
+          <Box
+            sm="12"
+            md="12"
+            lg="12"
+            xl="12"
+            xxl="12"
+            className="sm-text-align-center"
+          >
             <H1 className="sm-text-align-center uppercase large-text js-animate fadeIn animate-2">
               I ❤ to make things for the Internet
             </H1>
           </Box>
 
-          <Box sm="12" lg="4" className="js-animate fadeIn animate-3">
+          <Box
+            sm="12"
+            md="12"
+            lg="4"
+            xl="4"
+            xxl="4"
+            className="js-animate fadeIn animate-3"
+          >
             <img
               src="https://s3.eu-west-2.amazonaws.com/2017.michael-smedley.co.uk/www/assets/img/profile.jpg"
               alt="Portrait shot"
             />
           </Box>
-          <Box sm="12" lg="8" className="story-text js-animate fadeIn animate-3">
+          <Box
+            sm="12"
+            md="8"
+            lg="8"
+            xl="8"
+            xxl="8"
+            className="story-text js-animate fadeIn animate-3"
+          >
             <p className="mt-0">
               I have over 10 years industry experience working in-house and for
               agencies. I have made award winning projects for clients like
@@ -126,7 +147,14 @@ export default class About extends Component {
             </p>
           </Box>
 
-          <Box sm="12" md="6" lg="3" className="js-animate fadeIn animate-3">
+          <Box
+            sm="12"
+            md="6"
+            lg="3"
+            xl="3"
+            xxl="3"
+            className="js-animate fadeIn animate-3"
+          >
             <H3>Back end</H3>
             <ul className="mt-0 listless  serif">
               <li>PHP 5+</li>
@@ -135,7 +163,14 @@ export default class About extends Component {
               <li>Wordpress</li>
             </ul>
           </Box>
-          <Box sm="12" md="6" lg="3" className="js-animate fadeIn animate-3">
+          <Box
+            sm="12"
+            md="6"
+            lg="3"
+            xl="3"
+            xxl="3"
+            className="js-animate fadeIn animate-3"
+          >
             <H3>Front End</H3>
 
             <ul className="mt-0 listless serif">
@@ -146,7 +181,14 @@ export default class About extends Component {
               <li>React</li>
             </ul>
           </Box>
-          <Box sm="12" md="6" lg="3" className="js-animate fadeIn animate-3">
+          <Box
+            sm="12"
+            md="6"
+            lg="3"
+            xl="3"
+            xxl="3"
+            className="js-animate fadeIn animate-3"
+          >
             <H3>Server side</H3>
 
             <ul className="mt-0 listless serif">
@@ -155,7 +197,14 @@ export default class About extends Component {
               <li>AWS</li>
             </ul>
           </Box>
-          <Box sm="12" md="6" lg="3" className="js-animate fadeIn animate-3">
+          <Box
+            sm="12"
+            md="6"
+            lg="3"
+            xl="3"
+            xxl="3"
+            className="js-animate fadeIn animate-3"
+          >
             <H3>Everything else</H3>
 
             <ul className="mt-0 listless serif">
@@ -165,8 +214,7 @@ export default class About extends Component {
             </ul>
           </Box>
 
-
-          <Box sm="12" className="js-animate fadeIn animate-3">
+          <Box sm="12" md="12" lg="12" xl="12" xxl="12" className="js-animate fadeIn animate-3">
             <H3>Want to talk?</H3>
             <p>
               I am always interested in listening to any design or development

@@ -2,7 +2,6 @@ import React from 'react';
 
 let fallback = '';
 const Picture = ({ images, title }) => {
-  console.log(images);
   if (images) {
     const workImages = images.map((item, index) => {
       fallback = item.src;

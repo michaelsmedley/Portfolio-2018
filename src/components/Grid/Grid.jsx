@@ -72,20 +72,22 @@ const Box = styled.div`
     @supports not (display: grid) {
       width: calc(100% * (${props => (props.sm ? props.sm : 0)} / 12));
     }
-
+    
     @supports (display: grid) {
       grid-column: span ${props => (props.sm ? props.sm : 0)};
     }
+    
   }
 
   @media screen and (min-width: ${bpMd}) {
     @supports not (display: grid) {
       width: calc(100% * (${props => (props.md ? props.md : 0)} / 12));
-    }
-
+    
+    
     @supports (display: grid) {
       grid-column: span ${props => (props.md ? props.md : 0)};
     }
+    
   }
   @media screen and (min-width: ${bpLg}) {
     @supports not (display: grid) {
@@ -95,15 +97,17 @@ const Box = styled.div`
     @supports (display: grid) {
       grid-column: span ${props => (props.lg ? props.lg : 0)};
     }
+    
   }
   @media screen and (min-width: ${bpXl}) {
     @supports not (display: grid) {
       width: calc(100% * (${props => (props.xl ? props.xl : 0)} / 12));
     }
-
+    
     @supports (display: grid) {
       grid-column: span ${props => (props.xl ? props.xl : 0)};
     }
+    
   }
   @media screen and (min-width: ${bpXxl}) {
     @supports not (display: grid) {
@@ -113,6 +117,7 @@ const Box = styled.div`
     @supports (display: grid) {
       grid-column: span ${props => (props.xxl ? props.xxl : 0)};
     }
+    
   }
 `;
 
