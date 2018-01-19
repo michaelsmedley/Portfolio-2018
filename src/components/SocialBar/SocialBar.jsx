@@ -1,5 +1,5 @@
-import React from "react";
-import { Box } from "../../components/Grid/Grid";
+import React from 'react';
+import { Box } from '../../components/Grid/Grid';
 
 const SocialBar = () => (
   <Box sm="12" md="12" lg="12" xl="12" xxl="12">

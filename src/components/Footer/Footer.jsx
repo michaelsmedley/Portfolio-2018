@@ -1,6 +1,6 @@
-import React from "react";
-import SocialBar from "../SocialBar/SocialBar";
-import { Container, Box } from "../../components/Grid/Grid";
+import React from 'react';
+import SocialBar from '../SocialBar/SocialBar';
+import { Container, Box } from '../../components/Grid/Grid';
 
 const Footer = () => (
   <footer className="pt-1 pb-1 js-animate fadeIn animate-5">

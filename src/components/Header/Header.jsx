@@ -2,10 +2,12 @@ import React from 'react';
 // import styled from 'styled-components';
 import styled from 'styled-components';
 import Logo from '../Logo/Logo';
-import { Container, Box } from "../../components/Grid/Grid";
+import { Container, Box } from '../../components/Grid/Grid';
 import SiteNav from '../SiteNav/SiteNav';
 
-const Header = styled.header`padding: 5vh 0;`;
+const Header = styled.header`
+  padding: 5vh 0;
+`;
 
 const HeaderBar = props => (
   <Header className="sans-serif js-animate fadeIn animate-1">

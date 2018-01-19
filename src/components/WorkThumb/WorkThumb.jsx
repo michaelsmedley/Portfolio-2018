@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import H3 from "../../components/H3/H3";
-import Picture from "../../components/Picture/Picture";
-import { Box } from "../../components/Grid/Grid";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import H3 from '../../components/H3/H3';
+import Picture from '../../components/Picture/Picture';
+import { Box } from '../../components/Grid/Grid';
 
 const ThumbBox = styled.div`
   position: relative;

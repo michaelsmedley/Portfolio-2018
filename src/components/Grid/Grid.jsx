@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-const bpSm = "0rem";
-const bpMd = "40rem";
-const bpLg = "64rem";
-const bpXl = "75rem";
-const bpXxl = "90rem";
+const bpSm = '0rem';
+const bpMd = '40rem';
+const bpLg = '64rem';
+const bpXl = '75rem';
+const bpXxl = '90rem';
 const breakpoints = {
   sm: bpSm,
   md: bpMd,

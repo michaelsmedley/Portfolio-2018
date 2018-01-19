@@ -69,10 +69,15 @@ const LogoBox = styled.div`
   }
 `;
 
-const Logo = (props) => (
+const Logo = props => (
   <LogoBox className="logo">
     <Link to="/" data-theme-change="home">
-      <img src={props.theme === "dark" ? logoLight : logo} alt="michael-smedley.co.uk" width="51" height="21" />
+      <img
+        src={props.theme === 'dark' ? logoLight : logo}
+        alt="michael-smedley.co.uk"
+        width="51"
+        height="21"
+      />
     </Link>
   </LogoBox>
 );

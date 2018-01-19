@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import { Helmet } from "react-helmet";
-import H1 from "../../components/H1/H1";
-import H2 from "../../components/H2/H2";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import { Container, Box } from "../../components/Grid/Grid";
-import ThemeChange from "../../helpers/ThemeChange";
-import ResetTheme from "../../helpers/ResetTheme";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
+import H1 from '../../components/H1/H1';
+import H2 from '../../components/H2/H2';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import { Container, Box } from '../../components/Grid/Grid';
+import ThemeChange from '../../helpers/ThemeChange';
+import ResetTheme from '../../helpers/ResetTheme';
 
 const HomePage = styled.div`
   footer {
@@ -31,15 +31,15 @@ const HomePage = styled.div`
 
 export default class WhyMe extends Component {
   componentDidMount() {
-    ResetTheme(document.getElementsByTagName("body")[0], "home");
+    ResetTheme(document.getElementsByTagName('body')[0], 'home');
     setTimeout(() => {
-      document.getElementsByTagName("body")[0].classList.add("loaded");
+      document.getElementsByTagName('body')[0].classList.add('loaded');
     }, 500);
     ThemeChange();
   }
 
   componentWillUnmount() {
-    ResetTheme(document.getElementsByTagName("body")[0], "home");
+    ResetTheme(document.getElementsByTagName('body')[0], 'home');
   }
 
   render() {
@@ -113,10 +113,10 @@ export default class WhyMe extends Component {
                 I am interested in any project, big or small, and am willing to
                 listen to any opportunities. I'm even happy to help give advice
                 or feedback on anything. If you want to discuss any projects,
-                then please feel free to email me at{" "}
+                then please feel free to email me at{' '}
                 <a href="mailto:hello@michael-smedley.co.uk">
                   hello@michael-smedley.co.uk
-                </a>, or follow me,{" "}
+                </a>, or follow me,{' '}
                 <a
                   href="https://twitter.com/smdly"
                   target="_blank"

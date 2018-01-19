@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import { Helmet } from "react-helmet";
-import H1 from "../../components/H1/H1";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import { Container, Box } from "../../components/Grid/Grid";
-import ThemeChange from "../../helpers/ThemeChange";
-import ResetTheme from "../../helpers/ResetTheme";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
+import H1 from '../../components/H1/H1';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import { Container, Box } from '../../components/Grid/Grid';
+import ThemeChange from '../../helpers/ThemeChange';
+import ResetTheme from '../../helpers/ResetTheme';
 
 const NotFoundPage = styled.div`
   footer {
@@ -30,15 +30,15 @@ const NotFoundPage = styled.div`
 
 export default class NotFound extends Component {
   componentDidMount() {
-    ResetTheme(document.getElementsByTagName("body")[0], "home");
+    ResetTheme(document.getElementsByTagName('body')[0], 'home');
     setTimeout(() => {
-      document.getElementsByTagName("body")[0].classList.add("loaded");
+      document.getElementsByTagName('body')[0].classList.add('loaded');
     }, 500);
     ThemeChange();
   }
 
   componentWillUnmount() {
-    ResetTheme(document.getElementsByTagName("body")[0], "home");
+    ResetTheme(document.getElementsByTagName('body')[0], 'home');
   }
 
   render() {
@@ -63,7 +63,7 @@ export default class NotFound extends Component {
             className="sm-text-align-left"
           >
             <H1 className="js-animate fadeIn slideUp animate-2 mt-0">
-              Oh no{" "}
+              Oh no{' '}
               <span role="img" aria-label="Crying face">
                 😭
               </span>
@@ -82,7 +82,7 @@ export default class NotFound extends Component {
 
               <p>
                 If you think that the link is correct, then it would be great if
-                you could{" "}
+                you could{' '}
                 <a href="mailto:errors@michael-smedley.co.uk">email me</a>,
                 telling me where you came from if possible.
               </p>

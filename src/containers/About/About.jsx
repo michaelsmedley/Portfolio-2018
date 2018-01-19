@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import { Helmet } from "react-helmet";
-import H1 from "../../components/H1/H1";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import H3 from "../../components/H3/H3";
-import { Container, Box } from "../../components/Grid/Grid";
-import ThemeChange from "../../helpers/ThemeChange";
-import ResetTheme from "../../helpers/ResetTheme";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
+import H1 from '../../components/H1/H1';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import H3 from '../../components/H3/H3';
+import { Container, Box } from '../../components/Grid/Grid';
+import ThemeChange from '../../helpers/ThemeChange';
+import ResetTheme from '../../helpers/ResetTheme';
 
 const AboutPage = styled.div`
   color: #dcdcdd;
@@ -63,16 +63,16 @@ const AboutPage = styled.div`
 
 export default class About extends Component {
   componentDidMount() {
-    ResetTheme(document.getElementsByTagName("body")[0], "about");
-    document.getElementsByTagName("body")[0].classList.add("about");
+    ResetTheme(document.getElementsByTagName('body')[0], 'about');
+    document.getElementsByTagName('body')[0].classList.add('about');
     setTimeout(() => {
-      document.getElementsByTagName("body")[0].classList.add("loaded");
+      document.getElementsByTagName('body')[0].classList.add('loaded');
     }, 500);
     ThemeChange();
   }
 
   componentWillUnmount() {
-    ResetTheme(document.getElementsByTagName("body")[0]);
+    ResetTheme(document.getElementsByTagName('body')[0]);
   }
 
   render() {
@@ -214,13 +214,20 @@ export default class About extends Component {
             </ul>
           </Box>
 
-          <Box sm="12" md="12" lg="12" xl="12" xxl="12" className="js-animate fadeIn animate-3">
+          <Box
+            sm="12"
+            md="12"
+            lg="12"
+            xl="12"
+            xxl="12"
+            className="js-animate fadeIn animate-3"
+          >
             <H3>Want to talk?</H3>
             <p>
               I am always interested in listening to any design or development
-              opportunities, big or small, so feel free to{" "}
+              opportunities, big or small, so feel free to{' '}
               <a href="mailto:hello@michael-smedley.co.uk">email me</a> or catch
-              me on{" "}
+              me on{' '}
               <a
                 href="https://twitter.com/smdly"
                 target="_blank"
