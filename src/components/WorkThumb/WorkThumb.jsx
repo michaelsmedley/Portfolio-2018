@@ -1,8 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import H3 from '../../components/H3/H3';
-import Picture from '../../components/Picture/Picture';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import H3 from "../../components/H3/H3";
+import Picture from "../../components/Picture/Picture";
+import { Box } from "../../components/Grid/Grid";
 
 const ThumbBox = styled.div`
   position: relative;
@@ -48,20 +49,22 @@ const ThumbBox = styled.div`
 `;
 
 const WorkThumb = props => (
-  <ThumbBox className="sm-col-12 md-col-6">
-    <Link to={props.link} data-theme-change="work">
-      <Picture images={props.images} title={props.name} />
-    </Link>
-    <section className="overlay align-center sm-text-align-center">
-      <div className="sm-col-12">
-        <H3 className="mt-0 mb-0">
-          <Link to={props.link} data-theme-change="work">
-            {props.name}
-          </Link>
-        </H3>
-      </div>
-    </section>
-  </ThumbBox>
+  <Box sm="12" md="6" lg="6" xl="6" xxl="6">
+    <ThumbBox>
+      <Link to={props.link} data-theme-change="work">
+        <Picture images={props.images} title={props.name} />
+      </Link>
+      <section className="overlay align-center sm-text-align-center">
+        <Box sm="12">
+          <H3 className="mt-0 mb-0">
+            <Link to={props.link} data-theme-change="work">
+              {props.name}
+            </Link>
+          </H3>
+        </Box>
+      </section>
+    </ThumbBox>
+  </Box>
 );
 
 export default WorkThumb;

@@ -6,6 +6,7 @@ import H2 from '../../components/H2/H2';
 import H3 from '../../components/H3/H3';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import { Container, Box } from '../../components/Grid/Grid';
 import ThemeChange from '../../helpers/ThemeChange';
 import ResetTheme from '../../helpers/ResetTheme';
 import Picture from '../../components/Picture/Picture';
@@ -123,19 +124,19 @@ export default class Work extends Component {
           />
         </Helmet>
         <Header theme="dark" />
-        <div className="container mb-1">
-          <div className="sm-col-12 js-animate fadeIn slideUp animate-2">
+        <Container className="mb-1">
+          <Box sm="12" className="js-animate fadeIn slideUp animate-2">
             <H1 className="sm-text-align-center uppercase large-text">
               {this.state.workItem.title}
             </H1>
-          </div>
-          <div className="sm-col-12 js-animate fadeIn slideUp animate-3">
+          </Box>
+          <Box sm="12" className="js-animate fadeIn slideUp animate-3">
             <Picture
               images={this.state.workItem.desktop}
               title={this.state.workItem.title}
             />
-          </div>
-          <div className="sm-col-12 js-animate fadeIn slideUp animate-4">
+          </Box>
+          <Box sm="12" className="js-animate fadeIn slideUp animate-4">
             <p>
               <a
                 href={this.state.workItem.url}
@@ -161,9 +162,9 @@ export default class Work extends Component {
               images={this.state.workItem.mobile}
               title={this.state.workItem.title}
             /></p>
-          </div>
+          </Box>
 
-          <div className="sm-col-12 md-col-12 js-animate fadeIn slideUp animate-5">
+          <Box sm="12" className="js-animate fadeIn slideUp animate-5">
             <H3>Does this sound like you?</H3>
             <p>
               I am always interested in listening to any design or development
@@ -178,8 +179,8 @@ export default class Work extends Component {
                 Twitter
               </a>.
             </p>
-          </div>
-        </div>
+          </Box>
+        </Container>
         <Footer />
       </WorkPage>
     );

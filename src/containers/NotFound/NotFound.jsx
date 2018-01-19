@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import H1 from '../../components/H1/H1';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import { Container, Box } from '../../components/Grid/Grid';
 import ThemeChange from '../../helpers/ThemeChange';
 import ResetTheme from '../../helpers/ResetTheme';
 
@@ -52,8 +53,8 @@ export default class NotFound extends Component {
           />
         </Helmet>
         <Header theme="light" />
-        <main className="container align-top mb-1">
-          <div className="sm-col-12 sm-text-align-left">
+        <Container className="align-top mb-1">
+          <Box sm="12" className="sm-text-align-left">
             <H1 className="js-animate fadeIn slideUp animate-2 mt-0">
               Oh no <span role="img" aria-label="Crying face">😭</span>
             </H1>
@@ -81,8 +82,8 @@ export default class NotFound extends Component {
                 Thanks again.
               </p>
             </section>
-          </div>
-        </main>
+          </Box>
+        </Container>
         <Footer />
       </NotFoundPage>
     );

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Helmet } from 'react-helmet';
 import H1 from '../../components/H1/H1';
 import H2 from '../../components/H2/H2';
 import WorkStatus from '../../components/WorkStatus/WorkStatus';
@@ -8,6 +7,7 @@ import SocialBar from '../../components/SocialBar/SocialBar';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import WorkThumb from '../../components/WorkThumb/WorkThumb';
+import { Container, Box } from "../../components/Grid/Grid";
 import ThemeChange from '../../helpers/ThemeChange';
 import ResetTheme from '../../helpers/ResetTheme';
 
@@ -80,8 +80,8 @@ export default class Home extends Component {
       <HomePage>
         <Header />
         <main>
-          <div className="container align-center mb-1">
-            <div className="sm-col-12 sm-text-align-left">
+          <Container className="align-center mb-1">
+            <Box sm="12" className="ssm-text-align-left">
               <H1 className="js-animate fadeIn animate-2 mt-0">
                 I am a Web Developer from Preston, UK.<br />
                 <span className="js-animate fadeIn animate-3">
@@ -99,11 +99,11 @@ export default class Home extends Component {
                 I am <WorkStatus availability={this.state.available} />
               </H2>
               <SocialBar />
-            </div>
-          </div>
-          <div className="container js-animate fadeIn animate-5 mb-1">
+            </Box>
+          </Container>
+          <Container className="js-animate fadeIn animate-5 mb-1">
             {WorkList}
-          </div>
+          </Container>
         </main>
         <Footer />
       </HomePage>

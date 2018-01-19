@@ -1,16 +1,21 @@
-import React from 'react';
-import SocialBar from '../SocialBar/SocialBar';
+import React from "react";
+import SocialBar from "../SocialBar/SocialBar";
+import { Container, Box } from "../../components/Grid/Grid";
 
 const Footer = () => (
   <footer className="pt-1 pb-1 js-animate fadeIn animate-5">
-    <div className="container">
-      <ul className="inline listless sm-col-12 sans-serif">
-        <li>
-          <a href="mailto:hello@michael-smedley.co.uk">hello@michael-smedley.co.uk</a>
-        </li>
-      </ul>
+    <Container>
+      <Box sm="12">
+        <ul className="inline listless sans-serif">
+          <li>
+            <a href="mailto:hello@michael-smedley.co.uk">
+              hello@michael-smedley.co.uk
+            </a>
+          </li>
+        </ul>
+      </Box>
       <SocialBar />
-    </div>
+    </Container>
   </footer>
 );
 
