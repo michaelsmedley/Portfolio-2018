@@ -136,6 +136,16 @@ export default class Work extends Component {
             <H1 className="sm-text-align-center uppercase large-text">
               {this.state.workItem.title}
             </H1>
+
+            <H3 className="sm-text-align-center">
+              <a
+                href={this.state.workItem.url}
+                rel="nofollow noopener"
+                target="_blank"
+              >
+                {this.state.workItem.url}
+              </a>
+            </H3>
           </Box>
           <Box
             sm="12"
@@ -158,15 +168,6 @@ export default class Work extends Component {
             xxl="12"
             className="js-animate fadeIn slideUp animate-4"
           >
-            <p>
-              <a
-                href={this.state.workItem.url}
-                rel="nofollow noopener"
-                target="_blank"
-              >
-                {this.state.workItem.url}
-              </a>
-            </p>
             <H2>Project Brief</H2>
             {this.state.workItem.brief}
             <H2>Implementation</H2>

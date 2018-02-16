@@ -10,7 +10,7 @@ const breakpoints = {
   md: bpMd,
   lg: bpLg,
   xl: bpXl,
-  xxl: bpXxl
+  xxl: bpXxl,
 };
 
 const Container = styled.main`
@@ -39,22 +39,15 @@ const Container = styled.main`
     grid-row-gap: 0;
   }
   &.align-top {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
   }
   &.align-center {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   &.align-bottom {
-    -webkit-box-align: end;
-    -ms-flex-align: end;
     align-items: flex-end;
   }
   &.align-self-bottom {
-    -ms-flex-item-align: end;
     align-self: flex-end;
   }
 `;
@@ -76,13 +69,11 @@ const Box = styled.div`
     @supports (display: grid) {
       grid-column: span ${props => (props.sm ? props.sm : 0)};
     }
-    
   }
 
   @media screen and (min-width: ${bpMd}) {
     @supports not (display: grid) {
       width: calc(100% * (${props => (props.md ? props.md : 0)} / 12));
-    
     
     @supports (display: grid) {
       grid-column: span ${props => (props.md ? props.md : 0)};
