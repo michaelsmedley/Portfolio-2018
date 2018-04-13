@@ -5,13 +5,6 @@ const bpMd = '40rem';
 const bpLg = '64rem';
 const bpXl = '75rem';
 const bpXxl = '90rem';
-const breakpoints = {
-  sm: bpSm,
-  md: bpMd,
-  lg: bpLg,
-  xl: bpXl,
-  xxl: bpXxl,
-};
 
 const Container = styled.main`
   display: flex;

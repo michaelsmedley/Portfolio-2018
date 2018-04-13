@@ -143,7 +143,7 @@ export default class Work extends Component {
                 rel="nofollow noopener"
                 target="_blank"
               >
-                {this.state.workItem.url}
+                View Project
               </a>
             </H3>
           </Box>
